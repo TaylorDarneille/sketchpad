@@ -9,7 +9,7 @@ const changeColor = (e) => {
 const generateSketchpad = (num) =>{
     const container = document.querySelector('.container')
     while(container.firstChild){
-        container.removeChild(firstChild)
+        container.removeChild(container.firstChild)
     }
     for (let i = 0; i < num; i++) {
 		let div = document.createElement('div')
