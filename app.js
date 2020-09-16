@@ -7,6 +7,10 @@ const changeColor = (e) => {
 }
 
 const generateSketchpad = (num) =>{
+    const container = document.querySelector('.container')
+    while(container.firstChild){
+        container.removeChild(firstChild)
+    }
     for (let i = 0; i < num; i++) {
 		let div = document.createElement('div')
         div.classList.add('square')
